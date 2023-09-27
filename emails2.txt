@@ -1,0 +1,3 @@
+EmailAddress,MXRecords
+jr.price@rackspace.com,<dns.resolver.Answer object at 0x1247b9870>
+jon@zer0day.net,<dns.resolver.Answer object at 0x1247ba9e0>

@@ -54,8 +54,9 @@ for domain in domains:
     else:
         print(len(answers))
         mxRecord = answers
-        for rec in answers:
-            print(rec.resolver.resolve())
+        for rec in mxRecord:
+            # print(rec.resolver.resolve())
+            print(rec)
     finally:
         mxRecords.append(mxRecord)
         emailAddresses.append(domain)

@@ -8,9 +8,7 @@ VERSION = "1.0.0"
 print("\n\n*** Starting DNS Checker {} ***\n".format(VERSION))
 
 
-def get_mx(
-    domain,
-):
+def get_mx(domain):
     """get_mx record."""
     print(f"- Checking {domain}...")
     result = dns.resolver.resolve(
@@ -25,6 +23,6 @@ def get_mx(
 
     print(f"########################################\n{domain}")
 
+import sys
 
-get_mx("rackspace.com")
-get_mx("zer0day.net")
+get_mx(sys.argv[0])
